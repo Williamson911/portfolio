@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <title>William Williamson</title>
+  </head>
+  <body>
+    <main>
+<header>
+  <div class="navigation">
+    <a href="#about"><img class="logo" src="images/logo.svg" alt="logo" /></a>
+
+    <!-- Menu desktop -->
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Burger -->
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Menu mobile flottant -->
+  <div class="mobile-menu-container">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+      <section id="about" class="clip-path">
+        <div class="about-content">
+          <div class="photo-parallax">
+          <img  class="photo" src="images/1516787352541.jpg" alt="photo" />
+          </div>
+          </div>
+          <div class="about-text">
+          <h1>William Williamson</h1>
+          <h2 id="typewriter"></h2>
+        <p>
+          Passionné par le design graphique et le développement web, je suis
+          constamment à la recherche de nouvelles opportunités pour créer des
+          expériences visuelles captivantes. Avec une solide expérience dans
+          l'industrie, je combine créativité et compétences techniques pour
+          donner vie à des projets uniques.
+        </p>
+        <a href="#portfolio" class="btn">Voir mes projets</a>
+        </div>
+      </section>
+      <section id="portfolio" class="reveal hidden">
+        <h2 class="reveal-text">Portfolio</h2>
+        <p>
+          Découvrez une sélection de mes projets récents, allant de la
+          conception de sites web à la création d'identités visuelles. Chaque
+          projet reflète mon engagement envers l'excellence et l'innovation.
+        </p>
+        <div class="projects">
+ <div class="project" data-project="project1">
+      <img src="images/soly_preview.jpg" alt="soly">
+      <div class="overlay">
+        <h3>Mega</h3>
+        <p>Landing page Soly</p>
+        <p>Voir le projet</p>
+      </div>
+    </div>
+
+    <div class="project" data-project="project2">
+      <img src="images/savagecast.webp" alt="logo savage cast">
+      
+      <div class="overlay">
+        <h3>Savage Cast</h3>
+        <p>Refonte logo et site web</p>
+        <p>Voir le projet</p>
+      </div>
+    </div>
+    <div class="project" data-project="project3">
+      <img src="images/callmeup_preview.jpg" alt="logo call me up">
+      
+      <div class="overlay">
+        <h3>Call me up</h3>
+        <p>Création de logo</p>
+        <p>Voir le projet</p>
+      </div>
+    </div>
+    <div class="project" data-project="project4">
+      <img src="images/xf_preview.jpg" alt="logo Xeno FihterZ">
+      
+      <div class="overlay">
+        <h3>Xeno FighterZ</h3>
+        <p>Création de logo + visuel tapis de jeu</p>
+        <p>Voir le projet</p>
+      </div>
+    </div>
+    <div class="project" data-project="project5">
+      <img src="images/gerogen_preview.jpg" alt="logo Gero Genetics">
+      
+      <div class="overlay">
+        <h3>Gero Genetics</h3>
+        <p>Création de logo</p>
+        <p>Voir le projet</p>
+      </div>
+    </div>
+
+    <div id="projectModal" class="modal">
+
+  <span class="close">&times;</span>
+
+  <div class="modal-content">
+    
+    <button class="prev">❮</button>
+
+    <img id="sliderImage" src="" alt="">
+
+    <button class="next">❯</button>
+
+  </div>
+
+</div>
+    
+
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Vous souhaitez collaborer ou en savoir plus sur mes services ? N'hésitez
+          pas à me contacter via les informations ci-dessous. Je suis toujours
+          ouvert à de nouvelles opportunités et collaborations.
+        </p>
+        <form class="contact-form" id="contact-form">
+
+  <div class="field">
+    <input type="text" name="name" required>
+    <label>Nom</label>
+    <span class="border"></span>
+  </div>
+
+  <div class="field">
+    <input type="email" name="email" required>
+    <label>Email</label>
+    <span class="border"></span>
+  </div>
+
+  <div class="field">
+    <textarea name="message" rows="4" required></textarea>
+    <label>Message</label>
+    <span class="border"></span>
+  </div>
+
+  <button class="submit-btn" id="submit-btn">
+    <span class="btn-text">Envoyer</span>
+    <span class="loader"></span>
+  </button>
+
+  <p class="success-message">Message envoyé ✔</p>
+
+</form>
+      </section>
+      <footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>William Williamson</h3>
+      <p>
+        Designer graphique & développeur web passionné par la création
+        d'expériences digitales modernes.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li>william.williamson.91@gmail.com</li>
+        <li>+32 478 99 43 42</li>
+        <li>Liège, Belgique</li>
+      </ul>
+
+      <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/williamwilliamson91/" target="_blank" class="social-icon">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 
+            0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 
+            19h-3v-10h3v10zm-1.5-11.268c-.966 
+            0-1.75-.79-1.75-1.764s.784-1.764 
+            1.75-1.764 1.75.79 1.75 1.764-.784 
+            1.764-1.75 1.764zm13.5 
+            11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.865 
+            0-2.151 1.456-2.151 
+            2.967v5.696h-3v-10h2.881v1.367h.041c.401-.76 
+            1.381-1.561 2.844-1.561 
+            3.041 0 3.604 2.002 
+            3.604 4.604v5.59z"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 William Williamson</p>
+  </div>
+
+</footer>
+    </main>
+    <div class="cursor"></div>
+    <button id="topBtn">↑</button>
+  </body>
+</html>
