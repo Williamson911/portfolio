@@ -17,6 +17,9 @@ body::before {
   pointer-events:none;
   z-index:9999;
 }
+body.modal-open {
+  overflow: hidden;
+}
 header {
   width: 100%;
   position: fixed;
@@ -413,7 +416,6 @@ p {
   position: fixed;
   z-index: 1000;
   left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -421,7 +423,7 @@ p {
 
 .modal-content {
   position: relative;
-  margin: auto;
+  margin: 40px auto;
   width: 70%;
   max-width: 900px;
   top: 50%;
@@ -434,6 +436,13 @@ p {
 .modal img {
   width: 65%;
   border-radius: 10px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+/* image zoomée */
+.modal img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
 }
 
 .close {

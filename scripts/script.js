@@ -167,6 +167,7 @@ document.querySelector(".prev").onclick = () => {
 
 closeBtn.onclick = () => {
   modal.style.display = "none";
+    modalImage.classList.remove("zoomed");
 };
 const nav = document.querySelector(".navigation");
 
@@ -296,7 +297,6 @@ const observer2 = new IntersectionObserver(entries => {
 
 texts.forEach(el => observer2.observe(el));
 
-
 projects.forEach(project => {
 
   project.addEventListener("mouseenter", () => {
@@ -308,6 +308,7 @@ projects.forEach(project => {
   });
 
 });
+
 window.addEventListener("scroll", () => {
 
   const header = document.querySelector("header");
@@ -319,3 +320,24 @@ window.addEventListener("scroll", () => {
   }
 
 });
+
+const modalImage = document.getElementById("sliderImage");
+
+/* zoom */
+modalImage.addEventListener("click", () => {
+  modalImage.classList.toggle("zoomed");
+});
+window.addEventListener("click", (e) => {
+
+  if (e.target === modal) {
+
+    modal.style.display = "none";
+    modalImage.classList.remove("zoomed");
+
+  }
+
+});
+modal.style.display = "block";
+document.body.classList.add("modal-open");
+modal.style.display = "none";
+document.body.classList.remove("modal-open");
