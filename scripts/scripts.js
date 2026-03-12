@@ -159,13 +159,29 @@ const projectImages = {
     "images/sc_filmo_mobile.png"
 
   ],
-  project3: [
+    project3: [
+    "images/sc_home.png",
+    "images/sc_demarche.png",
+    "images/sc_equipe.png",
+    "images/sc_filmo.png",
+
+  ],
+    project4: [
+    "images/sc_home_mobile.png",
+    "images/sc_menu_mobile.png",
+    "images/sc_demarche_mobile.png",
+    "images/sc_equipe_mobile.png",
+    "images/sc_filmo_mobile.png"
+
+  ],
+  
+  project5: [
     "images/callmeuplogo.webp"
   ],
-  project4: [
+  project6: [
     "images/tapisnew.jpg"
   ],
-  project5: [
+  project7: [
     "images/gglogo.png"
   ]
 };

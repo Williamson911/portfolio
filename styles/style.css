@@ -389,12 +389,15 @@ p {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 358px;
 }
 
 .project img {
-  width: 100%;
   display: block;
   transition: transform 0.5s;
+height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .project:hover img {
@@ -454,7 +457,9 @@ p {
 }
 .modal-content img.small-img {
   width: 35%;
-  max-width: 50%;
+}
+.modal-content img.xsmall-img {
+  width: 25%;
 }
 /* image zoomée */
 .modal img.zoomed{
