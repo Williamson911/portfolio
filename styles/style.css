@@ -831,7 +831,4 @@ main {
   #topBtn {
   display: none !important;
 }
-.modal {
-  top:auto;
-}
 }
