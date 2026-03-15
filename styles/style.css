@@ -849,4 +849,8 @@ main {
   #topBtn {
   display: none !important;
 }
+  #portfolio::after {
+  bottom: -81px;     /* décalage vers le bas */
+  height: 82px;
+}
 }
