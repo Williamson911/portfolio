@@ -8,6 +8,13 @@ body {
   line-height: 1.7;
   background-color: #0b1215ff;
 }
+@font-face {
+  font-family: "Emelind";
+  src:
+    local("Emelind"),
+    url("../font/Emelind.otf") format("opentype") tech(color-COLRv1),
+    url("font/Emelind.ttf") format("Truetype");
+}
 body::before {
   content:"";
   position:fixed;
@@ -211,7 +218,7 @@ p {
 }
 
 nav a {
-  font-family: 'Montserrat', sans-serif; /* Montserrat */
+  font-family: 'Emelind', sans-serif;
   font-weight: 500; /* medium pour modernité */
   text-transform: uppercase; /* optionnel pour un style menu */
   letter-spacing: 1px; /* aère les lettres */
@@ -240,7 +247,7 @@ nav a:hover::after {
   width:100%;
 }
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Emelind', sans-serif;
   font-weight: 600;
   margin: 0;
 }
@@ -280,7 +287,7 @@ p {
 
 .btn {
   margin-top: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Emelind', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -853,4 +860,314 @@ main {
   bottom: -81px;     /* décalage vers le bas */
   height: 82px;
 }
+}
+/* ============================================
+   HERO — coller à la fin de style.css
+   ============================================ */
+
+/* Layout principal du hero */
+#about {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 120px auto;
+  color: #fffcfcff;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Colonne gauche */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Point disponible */
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00cdca;
+  flex-shrink: 0;
+}
+
+.hero-eyebrow-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 252, 0.5);
+}
+
+/* Titres Emelind grands */
+.hero-headline {
+  margin-bottom: 24px;
+}
+
+.hero-big-word {
+  font-family: 'Emelind', sans-serif;
+  font-weight: 600;
+  font-size: clamp(56px, 7vw, 96px);
+  line-height: 0.95;
+  letter-spacing: -1px;
+  color: #fffcfc;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.hero-big-word.hero-cyan {
+  color: #00cdca;
+}
+
+/* Tags inline */
+.hero-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  align-self: flex-end;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.hero-tag-design {
+  background: rgba(0, 205, 202, 0.12);
+  color: #00cdca;
+  border: 0.5px solid rgba(0, 205, 202, 0.35);
+}
+
+.hero-tag-dev {
+  font-family: monospace;
+  background: rgba(255, 252, 252, 0.08);
+  color: rgba(255, 252, 252, 0.6);
+  border: 0.5px solid rgba(255, 252, 252, 0.15);
+  font-size: 12px;
+}
+
+/* Tagline typewriter */
+.hero-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 252, 252, 0.55);
+  line-height: 1.8;
+  max-width: 420px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  min-height: 24px;
+}
+
+.hero-desc::after {
+  content: "|";
+  color: #00cdca;
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* CTAs */
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-btn-main {
+  font-family: 'Emelind', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 12px 25px;
+  background-color: #00cdca;
+  color: #0b1215;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.hero-btn-main:hover {
+  background-color: #00a6a3;
+}
+
+.btn-outline {
+  font-family: 'Emelind', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 12px 25px;
+  background: transparent;
+  color: #fffcfc;
+  border: 1px solid rgba(255, 252, 252, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  border-color: #00cdca;
+  color: #00cdca;
+}
+
+/* Colonne droite — pills */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 8px;
+  min-width: 160px;
+}
+
+.hero-pills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.hero-pill {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(255, 252, 252, 0.15);
+  color: rgba(255, 252, 252, 0.5);
+  background: rgba(255, 252, 252, 0.04);
+  white-space: nowrap;
+}
+
+.hero-pill.hero-pill-accent {
+  border-color: rgba(0, 205, 202, 0.4);
+  color: #00cdca;
+  background: rgba(0, 205, 202, 0.06);
+}
+
+/* ============================================
+   RESPONSIVE mobile
+   ============================================ */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-right {
+    align-items: flex-start;
+  }
+
+  .hero-pills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .hero-big-word {
+    font-size: clamp(36px, 10vw, 52px);
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+}
+.about-content .hero-right {
+  padding-top: 52px;
+}
+/* ============================================
+   MODAL INFO — ajouter à la fin de style.css
+   ============================================ */
+
+.modal-info {
+  max-width: 65%;
+  margin: 24px auto 40px;
+  padding: 0 20px;
+}
+
+.modal-info-inner {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-tag {
+  font-family: 'Emelind', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #00cdca;
+}
+
+.modal-info-inner h3 {
+  font-family: 'Emelind', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: #fffcfc;
+  margin: 0;
+}
+
+.modal-info-inner p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 252, 252, 0.6);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.modal-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.modal-meta-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 252, 252, 0.3);
+}
+
+#modalLivrables {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 252, 252, 0.55);
+}
+
+@media (max-width: 768px) {
+  .modal-info {
+    max-width: 90%;
+  }
 }
