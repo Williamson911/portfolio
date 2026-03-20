@@ -1064,6 +1064,7 @@ footer ul li {
     flex-direction: column;
     gap: 32px;
     margin-top: 16px;
+    padding-left: 80px;
   }
 
   .hero-right {
