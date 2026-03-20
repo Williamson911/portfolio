@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // TYPEWRITER
   // ============================================
   const phrases = [
-    "Graphiste qui code. Développeur qui dessine.",
+    "Graphiste qui code. Développeur qui design.",
     "Design + Code = Impact",
     "Du pixel au code — je livre les deux."
   ];
