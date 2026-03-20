@@ -99,6 +99,9 @@ footer ul li {
 
 .social-icons {
   margin-top:10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .social-icon {
@@ -110,6 +113,7 @@ footer ul li {
   border-radius:50%;
   background:rgba(255,255,255,0.05);
   transition:0.3s;
+
 }
 
 .social-icon:hover {
@@ -148,7 +152,7 @@ footer ul li {
 
 #topBtn:hover {
   transform:translateY(-3px);
-  box-shadow:0 10px 20px rgba(0,205,202,0.4);
+  background-color: #00a6a3;
 }
 .navigation {
   display: flex;
@@ -692,7 +696,7 @@ height: 100%;
 
 .submit-btn:hover{
   transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(0,205,202,0.3);
+  background-color: #00a6a3;
 }
 
 .arrow{
