@@ -184,9 +184,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.querySelectorAll(".project").forEach(project => {
-    project.addEventListener("click", () => {
-      openModal(project.dataset.project, project.dataset.imgSize || "");
-    });
+    const wrap = project.querySelector(".img-wrap");
+    if (wrap) {
+      wrap.addEventListener("click", () => {
+        openModal(project.dataset.project, project.dataset.imgSize || "");
+      });
+    }
   });
 
   document.querySelector(".next").onclick = () => {
