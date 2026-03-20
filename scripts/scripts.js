@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
       images = projectImages[key];
       current = 0;
       modal.style.display = "block";
+      modal.scrollTop = 0;
       modalImg.src = images[current];
       modalImg.className = "";
       if (sizeClass) modalImg.classList.add(sizeClass + "-img");
@@ -202,11 +203,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Clic en dehors de l'image et du bloc info
-  modal.addEventListener("click", (e) => {
-    if (!e.target.closest(".modal-content") && !e.target.closest(".modal-info")) {
-      closeModal();
-    }
-  });
+modal.addEventListener("click", (e) => {
+  if (!e.target.closest(".modal-wrapper")) {
+    closeModal();
+  }
+});
 
 }); // end DOMContentLoaded
 
