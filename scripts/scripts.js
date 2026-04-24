@@ -147,7 +147,25 @@ document.addEventListener("DOMContentLoaded", () => {
     project4: ["images/sc_home_mobile.png", "images/sc_menu_mobile.png", "images/sc_demarche_mobile.png", "images/sc_equipe_mobile.png", "images/sc_filmo_mobile.png"],
     project5: ["images/callmeuplogo.webp"],
     project6: ["images/tapisnew.jpg"],
-    project7: ["images/gglogo.png"]
+    project7: ["images/gglogo.png"],
+    project8: [
+      "images/FireShot Webpage Capture 004 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 005 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 006 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 007 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 008 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 009 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 010 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 011 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 012 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 013 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 014 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 015 - 'Dashboard' - localhost.png",
+      "images/FireShot Webpage Capture 017 - 'Dashboard' - localhost.png",
+      "images/Screenshot 2026-04-18 at 21-42-22 Dashboard.png",
+      "images/Screenshot 2026-04-18 at 21-52-04 Dashboard.png",
+      "images/Screenshot 2026-04-18 at 21-52-40 Dashboard.png"
+    ]
   };
 
   const projectData = {
@@ -157,7 +175,8 @@ document.addEventListener("DOMContentLoaded", () => {
     project4: { tag: "Web Design", title: "Savage Cast — Site Mobile", desc: "Adaptation mobile de la refonte du site. Navigation repensée pour les petits écrans avec une expérience utilisateur optimisée.", livrables: "Maquettes mobile, intégration responsive" },
     project5: { tag: "Identité visuelle", title: "Call Me Up — Logo", desc: "Création d'un logo pour une solution IA de téléphonie. Design réfléchi pour refléter l'aspect technologique et moderne du produit.", livrables: "Logo vectoriel, déclinaisons couleurs" },
     project6: { tag: "Identité visuelle", title: "Xeno FighterZ — Logo & tapis de jeu", desc: "Identité visuelle complète pour une team de Dragon Ball Super Card Game. Logo et tapis de jeu personnalisé aux dimensions officielles.", livrables: "Logo vectoriel, tapis de jeu 60×35cm" },
-    project7: { tag: "Identité visuelle", title: "Gero Genetics — Logo", desc: "Création d'un logo pour une team de jeux de cartes à collectionner.", livrables: "Logo vectoriel, déclinaisons" }
+    project7: { tag: "Identité visuelle", title: "Gero Genetics — Logo", desc: "Création d'un logo pour une team de jeux de cartes à collectionner.", livrables: "Logo vectoriel, déclinaisons" },
+    project8: { tag: "Hackathon", title: "M.E.O.W. — Monitoring Energy On Webapp", desc: "Projet réalisé lors du Helmo Hackathon 2026 sur une problématique posée par FINEMECA. M.E.O.W. est une webapp de monitoring énergétique intégrant un chatbot IA fonctionnel. Backend en Java, frontend en Vue.js. Lauréat du 1er prix avec mon équipe.", livrables: "Dashboard Vue.js, chatbot IA intégré, interface de monitoring en temps réel" }
   };
 
   function openModal(key, sizeClass) {
