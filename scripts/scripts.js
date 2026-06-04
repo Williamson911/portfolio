@@ -165,6 +165,20 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/Screenshot 2026-04-18 at 21-42-22 Dashboard.png",
       "images/Screenshot 2026-04-18 at 21-52-04 Dashboard.png",
       "images/Screenshot 2026-04-18 at 21-52-40 Dashboard.png"
+    ],
+    project9: [
+      "images/projects/yu-gi-oh/desktop/home.png",
+      "images/projects/yu-gi-oh/desktop/deck-builder.png",
+      "images/projects/yu-gi-oh/desktop/deck-detail.png",
+      "images/projects/yu-gi-oh/desktop/decks.png",
+      "images/projects/yu-gi-oh/desktop/login.png",
+      "images/projects/yu-gi-oh/desktop/register.png",
+      "images/projects/yu-gi-oh/tablet/home.png",
+      "images/projects/yu-gi-oh/tablet/deck-builder.png",
+      "images/projects/yu-gi-oh/tablet/deck-detail.png",
+      "images/projects/yu-gi-oh/mobile/home.png",
+      "images/projects/yu-gi-oh/mobile/deck-builder.png",
+      "images/projects/yu-gi-oh/mobile/deck-detail.png"
     ]
   };
 
@@ -176,7 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
     project5: { tag: "Identité visuelle", title: "Call Me Up — Logo", desc: "Création d'un logo pour une solution IA de téléphonie. Design réfléchi pour refléter l'aspect technologique et moderne du produit.", livrables: "Logo vectoriel, déclinaisons couleurs" },
     project6: { tag: "Identité visuelle", title: "Xeno FighterZ — Logo & tapis de jeu", desc: "Identité visuelle complète pour une team de Dragon Ball Super Card Game. Logo et tapis de jeu personnalisé aux dimensions officielles.", livrables: "Logo vectoriel, tapis de jeu 60×35cm" },
     project7: { tag: "Identité visuelle", title: "Gero Genetics — Logo", desc: "Création d'un logo pour une team de jeux de cartes à collectionner.", livrables: "Logo vectoriel, déclinaisons" },
-    project8: { tag: "Hackathon", title: "M.E.O.W. — Monitoring Energy On Webapp", desc: "Projet réalisé lors du Helmo Hackathon 2026 sur une problématique posée par FINEMECA. M.E.O.W. est une webapp de monitoring énergétique intégrant un chatbot IA fonctionnel. Backend en Java, frontend en Vue.js. Lauréat du 1er prix avec mon équipe.", livrables: "Dashboard Vue.js, chatbot IA intégré, interface de monitoring en temps réel" }
+    project8: { tag: "Hackathon", title: "M.E.O.W. — Monitoring Energy On Webapp", desc: "Projet réalisé lors du Helmo Hackathon 2026 sur une problématique posée par FINEMECA. M.E.O.W. est une webapp de monitoring énergétique intégrant un chatbot IA fonctionnel. Backend en Java, frontend en Vue.js. Lauréat du 1er prix avec mon équipe.", livrables: "Dashboard Vue.js, chatbot IA intégré, interface de monitoring en temps réel" },
+    project9: { tag: "Application Web", title: "Yu-Gi-Oh! — Deck Builder", desc: "Application Angular permettant de parcourir le catalogue officiel des cartes Yu-Gi-Oh!, construire ses propres decks (main / extra / side) et les gérer. Authentification locale, persistance dans le navigateur, design responsive desktop / tablette / mobile.", livrables: "SPA Angular, deck builder, catalogue avec filtres, auth & persistance, design responsive" }
   };
 
   function openModal(key, sizeClass) {
