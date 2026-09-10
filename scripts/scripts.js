@@ -187,6 +187,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/projects/tournament/bracket.png",
       "images/projects/tournament/grand-final.png",
       "images/projects/tournament/champion.png"
+    ],
+    project11: [
+      "images/projects/new-game-plus/desktop/home.png",
+      "images/projects/new-game-plus/desktop/market.png",
+      "images/projects/new-game-plus/desktop/listing.png",
+      "images/projects/new-game-plus/desktop/admin.png",
+      "images/projects/new-game-plus/desktop/my-shop.png",
+      "images/projects/new-game-plus/mobile/home.png",
+      "images/projects/new-game-plus/mobile/menu.png",
+      "images/projects/new-game-plus/mobile/market.png",
+      "images/projects/new-game-plus/mobile/listing.png",
+      "images/projects/new-game-plus/mobile/admin.png",
+      "images/projects/new-game-plus/mobile/my-shop.png"
     ]
   };
 
@@ -200,7 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
     project7: { tag: "Identité visuelle", title: "Gero Genetics — Logo", desc: "Création d'un logo pour une team de jeux de cartes à collectionner.", livrables: "Logo vectoriel, déclinaisons" },
     project8: { tag: "Hackathon", title: "M.E.O.W. — Monitoring Energy On Webapp", desc: "Projet réalisé lors du Helmo Hackathon 2026 sur une problématique posée par FINEMECA. M.E.O.W. est une webapp de monitoring énergétique intégrant un chatbot IA fonctionnel. Backend en Java, frontend en Vue.js. Lauréat du 1er prix avec mon équipe.", livrables: "Dashboard Vue.js, chatbot IA intégré, interface de monitoring en temps réel" },
     project9: { tag: "Application Web", title: "Yu-Gi-Oh! — Deck Builder", desc: "Application Angular permettant de parcourir le catalogue officiel des cartes Yu-Gi-Oh!, construire ses propres decks (main / extra / side) et les gérer. Authentification locale, persistance dans le navigateur, design responsive desktop / tablette / mobile.", livrables: "SPA Angular, deck builder, catalogue avec filtres, auth & persistance, design responsive" },
-    project10: { tag: "Application Web", title: "Tournament Manager — Tekken 8", desc: "Application de gestion de tournoi Tekken 8 avec génération automatique des poules, bracket à élimination et écrans dédiés (Grand Final, Champion). L'interface s'inspire de l'esthétique du jeu (rouge / sombre / cartes personnages).", livrables: "Application full-stack Angular + Java, génération automatique de tournoi (poules → bracket → finale), conteneurisation Docker" }
+    project10: { tag: "Application Web", title: "Tournament Manager — Tekken 8", desc: "Application de gestion de tournoi Tekken 8 avec génération automatique des poules, bracket à élimination et écrans dédiés (Grand Final, Champion). L'interface s'inspire de l'esthétique du jeu (rouge / sombre / cartes personnages).", livrables: "Application full-stack Angular + Java, génération automatique de tournoi (poules → bracket → finale), conteneurisation Docker" },
+    project11: { tag: "Application Web", title: "New Game Plus — Market de jeux vidéo d'occasion", desc: "Marketplace pour l'achat et la vente de jeux vidéo d'occasion : catalogue avec filtres (genre, plateforme, prix), fiches produit détaillées, gestion de boutique vendeur et curation admin des pépites. Design responsive desktop / mobile.", livrables: "SPA Angular, API Spring Boot, gestion de boutiques & annonces, espace admin, design responsive" }
   };
 
   function openModal(key, sizeClass) {
